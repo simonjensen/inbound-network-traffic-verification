@@ -1,5 +1,6 @@
 const http = require('http');
-const server = http.createServer(function(req, res) {
+const port = process.env.PORT;
+const server = http.createServer(function (req, res) {
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   let date = new Date();
   console.log(date.toISOString(), ip, req.method, req.url);
@@ -7,4 +8,4 @@ const server = http.createServer(function(req, res) {
   res.end("OK\n");
 });
 
-server.listen(8080);
+server.listen(port);
