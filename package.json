@@ -1,0 +1,13 @@
+{
+  "name": "inbound-network-traffic-verification",
+  "version": "1.0.0",
+  "description": "A node.js webserver for debugging incoming traffic",
+  "author": "Simon Jensen <hello@simon-jense.net>",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "request-ip": "3.3.0"
+  }
+}
