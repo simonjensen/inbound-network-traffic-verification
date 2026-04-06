@@ -1,5 +1,7 @@
 # inbound-network-traffic-verification
 
+[![Pipeline](https://github.com/simonjensen/inbound-network-traffic-verification/actions/workflows/release.yaml/badge.svg?branch=main)](https://github.com/simonjensen/inbound-network-traffic-verification/actions/workflows/release.yaml)
+
 > A simple node.js app used for verifying inbound traffic
 
 ## How it works
