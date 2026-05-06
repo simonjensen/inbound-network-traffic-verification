@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   ci:
     name: CI
-    uses: simonjensen/pipelines/.github/workflows/ci.yaml@main
+    uses: simonjensen/pipelines/.github/workflows/ci.yaml@7b0f0b96e04df8bff85f196591d4fc4fa98a282d # main
     with:
       image-name: ${{ github.repository }}
       docker-build: true
