@@ -3,4 +3,19 @@
   "extends": [
     "config:best-practices"
   ]
+  "dependencyDashboard": true,
+  "dependencyDashboardApproval": false,
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "pinDigests": false
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ]
 }
