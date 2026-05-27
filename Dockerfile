@@ -1,15 +1,15 @@
-FROM node:25-alpine
+FROM docker.io/library/node:25-alpine
 
 WORKDIR /app
 
 COPY package.json index.js /app/
 
 RUN npm set progress=false && \
-  npm config set depth 0 && \
-  npm install --omit=dev && \
-  npm audit fix
+    npm config set depth 0 && \
+    npm install --omit=dev && \
+    npm audit fix
 
-ENV PORT 8080
+ENV PORT=8080
 
 EXPOSE $PORT
 
